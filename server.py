@@ -15,8 +15,6 @@ def board_with_custom_rows(rows):
 
 @app.route('/<int:rows>/<int:columns>')
 def board_with_custom_cols(rows, columns):
-    print(f"columns, {columns}")
-    print("hello")
     return render_template('index.html', rows=rows, columns=columns, light='#556b2f', dark='#ffffe0')
 
 
